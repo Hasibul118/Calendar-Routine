@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-calendar{
+    width: 100% !important;
+}
+
+.react-calendar__tile{
+    line-height: 60px !important;
+    font-size: 24px;
+}
+
+.react-calendar__month-view__weekdays__weekday{
+    font-size: 20px;
+}
+.react-calendar__month-view__weekdays__weekday abbr{
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 767.9px) {
+    .react-calendar{
+        line-height: 4rem !important;
+    }
+    .react-calendar__tile{
+        line-height: 30px !important;
+        font-size: 19px;
+    }
+    .react-calendar__month-view__weekdays__weekday{
+        font-size: 15px;
+    }
+}
